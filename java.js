@@ -10,8 +10,14 @@ const object2 = {
     station:'mankaur',
 };
 
-const merge = {
-   ...object,
-   ...object2,
+const update = {
+  name:'shubham',
+  last:'pandey',
+  town:'delhi',
 };
-console.log(merge);
+
+const resut = {
+  ...object,
+  ...update,
+};
+console.log(resut);
