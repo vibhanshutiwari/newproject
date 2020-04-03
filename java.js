@@ -6,9 +6,9 @@ const list = [{
   nick:'shu',
   personal:'everythings',
   become:' softwere developer',
+  salary:20000,
 }];
 
-var num = 'shubham';
-
-var ans = list.find(fun => fun.name == num);
-console.log(ans);
+const resultsalary = list => list.salary > 18000;
+const newsalary = list.some(resultsalary);
+console.log(newsalary);
