@@ -1,5 +1,14 @@
 
-const list = [1,2,3,4,5,6,7,8,9,10];
-const finds = x => x % 2 ==0;
-const container = list.filter(finds);
-console.log(container);
+const list = [{
+  name:'shubham',
+  age:21,
+  jobs:'yet not',
+  nick:'shu',
+  personal:'everythings',
+  become:' softwere developer',
+}];
+
+var num = 'shubham';
+
+var ans = list.find(fun => fun.name == num);
+console.log(ans);
