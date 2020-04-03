@@ -1,26 +1,5 @@
-const objectlst = [{
-    name:'himansh',
-    last:'tiwari',
-    town:'kaleniya',
-}];
 
-const objectlst2 =[{
-    type:'name',
-    personal:'matter',
-    station:'mankaur',
-    ...objectlst,
-}];
-//console.log(objectlst2);
-
-const update = [{
-  type:'jobs',
-  personal:'document',
-  office:'navi mumbai',
-}];
-
-const updated = [{
-  ...objectlst2,
-  ...update
-}];
-
-console.log(updated);
+const list = [1,2,3,4,5,6,7,8,9,10];
+const finds = x => x*2;
+const container = list.map(finds);
+console.log(container);
