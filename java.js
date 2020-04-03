@@ -1,4 +1,17 @@
+const maxnumber = (x,y) => {
+   if(x > y) {
+    return;
+}
+   console.log(x);
+   maxnumber(x + 1,2);
+ };
+ maxnumber(1,2);
 
-const counts = (x,y,z) => x+y+z;
-const ans = shu => shu(2,4,6);
-console.log(ans(counts));
+var factorial = function fac(num) {
+    if(num == 1){
+     return 1;
+    } 
+    return num * fac(num-1);
+ };
+ var newvalue = factorial(5);
+console.log(newvalue);
