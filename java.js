@@ -1,23 +1,13 @@
-const object = {
+const objectlst = [{
     name:'himansh',
     last:'tiwari',
     town:'kaleniya',
-};
+}];
 
-const object2 = {
+const objectlst2 =[{
     type:'name',
     personal:'matter',
     station:'mankaur',
-};
-
-const update = {
-  name:'shubham',
-  last:'pandey',
-  town:'delhi',
-};
-
-const resut = {
-  ...object,
-  ...update,
-};
-console.log(resut);
+    ...objectlst,
+}];
+console.log(objectlst2);
