@@ -10,4 +10,17 @@ const objectlst2 =[{
     station:'mankaur',
     ...objectlst,
 }];
-console.log(objectlst2);
+//console.log(objectlst2);
+
+const update = [{
+  type:'jobs',
+  personal:'document',
+  office:'navi mumbai',
+}];
+
+const updated = [{
+  ...objectlst2,
+  ...update
+}];
+
+console.log(updated);
