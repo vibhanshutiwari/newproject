@@ -1,18 +1,19 @@
 
-const list = [
-    'shubham',
-    'aman',
-    'manish',
-    'puneet',
-    'shubham',
-    'puneet',
-    'shubham',
+const mainlist = [
+    {
+        price: 100,
+        product: 'mobile',
+        brand: 'nokia',
+    },
+    {
+        price: 1000,
+        product: 'laptop',
+        brand: 'honor',   
+    }
 ];
-const newmain = show => {
-    return show.reduce((acc,x) => ({
-        ...acc,
-        [x] : acc[x] ? acc[x] +1 : 1,
-    }),{});
-};
 
-console.log(newmain(list));
+  const result = mainlist.map(function(value) {
+  return value.price;
+});
+
+console.log(result);
