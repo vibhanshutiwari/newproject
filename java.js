@@ -7,13 +7,13 @@ const mainlist = [
     },
     {
         price: 1000,
-        product: 'laptop',
+        main: 'laptop',
         brand: 'honor',   
     }
 ];
+ var name = 200;
+  const ans = mainlist.filter(value => {
+      return value.price >= name;   
+  });
 
-  const result = mainlist.map(function(value) {
-  return value.price;
-});
-
-console.log(result);
+console.log(ans);
