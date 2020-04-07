@@ -1,19 +1,43 @@
-
-let num = 5;
-
-while( num < 32) {
-    console.log(num);
-    num++
+// locial variable //
+const local = () => {
+    let mess = 'hello everyone!';
+    console.log(mess);
 }
+ local();
 
-let table = 2;
+ // outer variable //
+ let num = 59;
 
-do {
-    console.log(2* table);
-    table++;
-}  while (table <10);
+ const outer = () => {
+  console.log(num);
+ }
+  outer();
 
-let i = 20;
-while (i) {
-    console.log(i--);
+
+  // Default value //
+  const message = (from, text = 'i am shubham') => {
+      console.log(from + ':'+ text);
+  }
+    message('delhi');
+
+
+const display = name => console.log(`name ${name}`);
+display('shubam');
+
+
+// parameters //
+const ans = (name,lastname) => {
+    console.log(name + lastname);
 }
+ans('aman','pandey');
+
+
+let age = 44;
+const showage = () => {
+    if(age >= 33) {
+        console.log('its real age');
+    } else  {
+        console.log(' this not real age');
+    }
+}
+showage();
