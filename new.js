@@ -1,38 +1,18 @@
-
-const nameobj = {
-    name: 'shubham',
-    room: 'key'
+const nobject = {
+  name:'manish',
+  relatiion:'bhai',
+  salary: 2000
+  
 };
 
-// object add key value and delete key value //
-nameobj.room = 'key';
-delete nameobj.room;
-console.log(nameobj);
+nobject.salary =  +3000;
+console.log(nobject.salary);
 
-let newname = 'name';
-console.log(nameobj[newname]);
-
-
-// for.. in loop //
-const object = {
-  city: 'pune',
-  age: 21,
-  mob: 32343234
+const list  = {
+    name:'shubham',
+    pincode: 320031,
+    valueOf () {
+        return this.pincode;
+    }
 };
-
-for(let prop in object) {
-    console.log(prop);
-    console.log(object[prop]);
-}
-
-
-const shu = {
-    name:'aman',
-    age: 15,
-};
-
-const merge = {
-    ...shu,
-};
-
-console.log(merge);
+console.log(list * 2);
