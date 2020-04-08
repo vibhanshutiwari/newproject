@@ -1,43 +1,38 @@
-// locial variable //
-const local = () => {
-    let mess = 'hello everyone!';
-    console.log(mess);
+
+const nameobj = {
+    name: 'shubham',
+    room: 'key'
+};
+
+// object add key value and delete key value //
+nameobj.room = 'key';
+delete nameobj.room;
+console.log(nameobj);
+
+let newname = 'name';
+console.log(nameobj[newname]);
+
+
+// for.. in loop //
+const object = {
+  city: 'pune',
+  age: 21,
+  mob: 32343234
+};
+
+for(let prop in object) {
+    console.log(prop);
+    console.log(object[prop]);
 }
- local();
-
- // outer variable //
- let num = 59;
-
- const outer = () => {
-  console.log(num);
- }
-  outer();
 
 
-  // Default value //
-  const message = (from, text = 'i am shubham') => {
-      console.log(from + ':'+ text);
-  }
-    message('delhi');
+const shu = {
+    name:'aman',
+    age: 15,
+};
 
+const merge = {
+    ...shu,
+};
 
-const display = name => console.log(`name ${name}`);
-display('shubam');
-
-
-// parameters //
-const ans = (name,lastname) => {
-    console.log(name + lastname);
-}
-ans('aman','pandey');
-
-
-let age = 44;
-const showage = () => {
-    if(age >= 33) {
-        console.log('its real age');
-    } else  {
-        console.log(' this not real age');
-    }
-}
-showage();
+console.log(merge);
