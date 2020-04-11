@@ -1,52 +1,58 @@
 
-// constructor method //
-const User = (name, lname) => {
-    this.name = name;
-    this.lname = lname;
-}
-User('Shubham');
-console.log(this.name);
+const instructor = {
+    firstname: 'shubham',
+    lastname: 'tiwari',
+    village: 'gonda',
+    course: 'javascript',
+    social: {
+        email: 'vibh@',
+        facebook: 'shubham',
+        tittok: 'shu@13'
+    },
+    interest: 'playing',
 
-
-// Array delete and splice use //
-const list = ['shu', 'ht', 'gth', 'tt'];
-
-delete list[3];
-console.log(list.length);
-
-let store = list.slice(2);
-console.log(store);
-
-// string value add in object with helps of splice //
-const newiteam = ['name', 'lman', 'nborn'];
-  const newvalue = newiteam.splice(1, 0, 'how');
-    
-  console.log(newiteam);
-
-  // another object add in array in object //
-const oneobject = [{
-    rollno: 21,
-    class: 9,
-}];
-newobject = {
-    anotherclass: 10,
-    otherstudentno: 33,
 };
+  const {firstname,lastname,village,course,social} = instructor;
+  //console.log(firstname,lastname,village,course,social.facebook);
 
-oneobject.splice(0, 0, newobject);
-   
-
-// sorting in array //
-const sorted = [22.44,11,55,1];
  
- const hey = (a,b) => {
-     if(a > b) return 1;
-     if(a < b) return -1;
- }
-   sorted.sort(hey);
-   console.log(sorted);
+  const newdestructor = [
+      {
+        firstname: 'shubham',
+        lastname: 'tiwari',
+        village: 'gonda',
+        course: 'javascript',
+        social: {
+            email: 'vibh@',
+            facebook: 'shubham',
+            tittok: 'shu@13'
+        },
+        interest: 'playing',
+      },
+      {
+        firstname: 'manish',
+        lastname: 'pandey',
+        village: 'lucknow',
+        course: '.net',
+        social: {
+            email: 'namhu@',
+            facebook: 'aman',
+            tittok: 'manu@13'
+        },
+        interest: 'teaching',
+        subject: 'chemistry',
+      }
+  ];
+  
+  //way 2
+ // var obj = newdestructor.map((inst, indx) => {
+   //   console.log(indx);
+    //return {fname : inst.firstname, lname: inst.lastname, facebook : inst.social.facebook};
+ // });
+  //console.log(obj);
 
-    let marks = sorted.reduce((acc,x) => {
-       acc + x;
-   },0);
-   console.log(marks);
+ newdestructor.map(inst => {
+    const {firstname: fname,lastname: lname,village: vill,social: scl} = inst;
+
+    console.log(fname,lname,vill,scl.facebook);
+ });
