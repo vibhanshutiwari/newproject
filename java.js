@@ -1,30 +1,33 @@
 
-// object value find with helps template literal ..
 
-const stringobj = {
-  name: 'mohan das',
-  course: 'javascript',
-  website: 'www.myhome.in',
-  social: 'facebook',
-};
-
-const newobj = `${stringobj.name},${stringobj.course},${stringobj.website},${stringobj.social}`;
-console.log(newobj);
-
-// passed the parameter with helps object key..
-
-const para = (name, ...num) => {
-   console.log('name',name);
-   console.log('second',num);
+for(let num = 0; num <= 10; num ++) {
+    if(num % 2 == 1) {
+        console.log(`odd ${num}`);
+    }
 }
-para('hello',`${stringobj.name},${stringobj.course},${stringobj.website},${stringobj.social}`);
-  
 
-// store string five line in one variable ...
 
-const write =  `On sunday,Manu is parents  got him a red raincoat.
-Ma, May i wear it now? Monu asked.
-No,My dear,the rains are near,but just now sky is clear, said Ma.`;
+const isPrime = nums => {
+  if(nums == 2) {
+      return true;
+  }
+   else if(nums > 1) {
+      for(let i = 2; i < nums; i ++) {
 
-console.log(write);
+          if(nums % i !== 0) {
+              return true;
+          } 
+          else if(nums == i * i) {
+              return false;
+          } 
+          else {
+           return false;
+          }
+      }
+  }   
+    else {
+        return false;
+    }
+}
 
+console.log(isPrime(51));
